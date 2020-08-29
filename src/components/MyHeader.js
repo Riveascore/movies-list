@@ -1,41 +1,47 @@
-// title
-// image
-// overview
-
-import React from 'react';
+// import React from 'react';
 import PropTypes from 'prop-types';
 import '../stories/movie_list_item.css';
 
+import React from 'react';
+import { makeStyles } from '@material-ui/core/styles';
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
-// import IconButton from '@material-ui/core/IconButton';
-// import MenuIcon from '@material-ui/core/MenuIcon';
 import Typography from '@material-ui/core/Typography';
-// import Button from '@material-ui/core/Button';
+import Button from '@material-ui/core/Button';
+import IconButton from '@material-ui/core/IconButton';
+import MenuIcon from '@material-ui/icons/Menu';
+
+const useStyles = makeStyles((theme) => ({
+  root: {
+    flexGrow: 1,
+  },
+  menuButton: {
+    marginRight: theme.spacing(2),
+  },
+  title: {
+    flexGrow: 1,
+  },
+}));
+
 
 export const MyHeader = ({ title, ...props }) => {
   // const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
+  const classes = useStyles();
   return (
-    // <div>
-    //   <h1
-    //     className="storybook-movie-list-item"
-    //   >
-    //     {title}
-    //   </h1>
-    // </div>
-    <AppBar position="static">
-      <Toolbar>
-        {/* <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
-          <MenuIcon />
-        </IconButton> */}
-        {/* <Typography variant="h6" className={classes.title}> */}
-        <Typography variant="h6" className="">
-          {title}
-        </Typography>
-      </Toolbar>
-    </AppBar>
+    <div className={classes.root}>
+      <AppBar position="static">
+        <Toolbar>
+          <IconButton edge="start" className={classes.menuButton} color="inherit" aria-label="menu">
+            <MenuIcon />
+          </IconButton>
+          <Typography variant="h6" className={classes.title}>
+            News
+          </Typography>
+          <Button color="inherit">Login</Button>
+        </Toolbar>
+      </AppBar>
+    </div>
   );
-};
 
 // export default MyHeader;
 
