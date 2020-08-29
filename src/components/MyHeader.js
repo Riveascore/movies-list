@@ -42,6 +42,7 @@ export const MyHeader = ({ title, ...props }) => {
       </AppBar>
     </div>
   );
+}
 
 // export default MyHeader;
 
