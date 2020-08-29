@@ -6,7 +6,7 @@ import React from 'react';
 // import PropTypes from 'prop-types';
 import '../stories/movie_list_item.css';
 
-export const MovieListItem = ({ title, uri, overview, ...props }) => {
+const MovieListItem = ({ title, uri, overview, ...props }) => {
   // const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <div>
@@ -25,6 +25,8 @@ export const MovieListItem = ({ title, uri, overview, ...props }) => {
     </div>
   );
 };
+
+export default MovieListItem;
 
 // MovieListItem.propTypes = {
 //   color: PropTypes.string

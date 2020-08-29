@@ -10,7 +10,7 @@ import movies from '../data/movies';
 
 import MovieListItem from './MovieListItem';
 
-export const MovieList = ({ ...props }) => {
+const MovieList = ({ ...props }) => {
   // const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <div>
@@ -18,6 +18,8 @@ export const MovieList = ({ ...props }) => {
     </div>
   );
 };
+
+export default MovieList;
 
 // MovieListItem.propTypes = {
 //   color: PropTypes.string
