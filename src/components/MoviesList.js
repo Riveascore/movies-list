@@ -21,11 +21,11 @@ const MovieList = ({ ...props }) => {
 
 export default MovieList;
 
-// MovieListItem.propTypes = {
+// MovieList.propTypes = {
 //   color: PropTypes.string
 // };
 
-// MovieListItem.defaultProps = {
+// MovieList.defaultProps = {
 //   color: null
 // };
 

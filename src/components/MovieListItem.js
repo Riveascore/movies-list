@@ -3,10 +3,10 @@
 // overview
 
 import React from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 import '../stories/movie_list_item.css';
 
-const MovieListItem = ({ title, uri, overview, ...props }) => {
+export const MovieListItem = ({ title, uri, overview, ...props }) => {
   // const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <div>
@@ -26,13 +26,19 @@ const MovieListItem = ({ title, uri, overview, ...props }) => {
   );
 };
 
-export default MovieListItem;
+// export default MovieListItem;
 
-// MovieListItem.propTypes = {
-//   color: PropTypes.string
-// };
+MovieListItem.propTypes = {
+  // color: PropTypes.string
+  title: "Title",
+  uri: 'https://i.pinimg.com/originals/d7/87/da/d787da8630ce5dfcd2d7f375b03efc55.png',
+  overview: "Overview"
+};
 
-// MovieListItem.defaultProps = {
-//   color: null
-// };
+MovieListItem.defaultProps = {
+  // color: null
+  title: "Title",
+  uri: 'https://i.pinimg.com/originals/d7/87/da/d787da8630ce5dfcd2d7f375b03efc55.png',
+  overview: "Overview"
+};
 
