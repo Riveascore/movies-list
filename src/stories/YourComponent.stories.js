@@ -14,5 +14,5 @@ const Template = (args) => <YourComponent {...args} />;
 export const FirstStory = Template.bind({});
 
 FirstStory.args = {
-  /* the args you need here will depend on your component */
+  label: 'Heading'
 };
